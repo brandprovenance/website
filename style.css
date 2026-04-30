@@ -246,7 +246,7 @@ nav.scrolled {
 
 .hero-note {
   font-size: 0.78rem;
-  color: var(--text-muted);
+  color: var(--text-secondary);
   letter-spacing: 0.02em;
 }
 
@@ -266,7 +266,7 @@ section { padding: 100px 0; position: relative; z-index: 1; }
   font-weight: 500;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: var(--text-muted);
+  color: var(--accent);
   margin-bottom: 40px;
   display: flex;
   align-items: center;
@@ -542,9 +542,8 @@ section { padding: 100px 0; position: relative; z-index: 1; }
   font-weight: 500;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: var(--text-muted);
+  color: var(--accent);
 }
-.example-col--after .example-col-label { color: var(--accent); }
 
 .example-output {
   background: rgba(0,0,0,0.3);
@@ -571,10 +570,10 @@ section { padding: 100px 0; position: relative; z-index: 1; }
   gap: 8px;
 }
 .example-issues li {
-  font-size: 0.8rem;
+  font-size: 0.95rem;
   font-weight: 300;
-  color: var(--text-muted);
-  line-height: 1.5;
+  color: var(--text-secondary);
+  line-height: 1.6;
   padding-left: 18px;
   position: relative;
 }
@@ -588,14 +587,14 @@ section { padding: 100px 0; position: relative; z-index: 1; }
 .example-issues--pass li { color: var(--text-secondary); }
 .example-issues--pass li::before {
   content: '✓';
-  color: var(--accent);
-  opacity: 0.8;
+  color: #6fbf73;
+  opacity: 0.9;
 }
 
 .example-note {
   font-size: 0.875rem;
   font-weight: 300;
-  color: var(--text-muted);
+  color: var(--accent);
   line-height: 1.8;
   max-width: 720px;
   border-left: 1px solid var(--border-2);
@@ -662,11 +661,11 @@ section { padding: 100px 0; position: relative; z-index: 1; }
 .coordinate-card--b { background: var(--bg-3); }
 
 .coordinate-tag {
-  font-size: 0.65rem;
+  font-size: 0.72rem;
   font-weight: 500;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: var(--text-muted);
+  color: var(--accent);
 }
 .coordinate-label {
   display: flex;
@@ -676,16 +675,16 @@ section { padding: 100px 0; position: relative; z-index: 1; }
 }
 .coord-channel {
   font-family: 'Courier New', monospace;
-  font-size: 0.72rem;
-  color: var(--text-muted);
+  font-size: 0.85rem;
+  color: var(--text-primary);
   letter-spacing: 0.02em;
 }
 .coord-sep {
-  font-size: 0.72rem;
-  color: var(--border-2);
+  font-size: 0.85rem;
+  color: var(--text-secondary);
 }
 .coord-mode {
-  font-size: 0.78rem;
+  font-size: 0.88rem;
   font-weight: 500;
   color: var(--accent);
   letter-spacing: 0.06em;
@@ -695,20 +694,20 @@ section { padding: 100px 0; position: relative; z-index: 1; }
 /* ─── DIAL SYSTEM ─── */
 .dial-set {
   display: grid;
-  grid-template-columns: max-content 1fr 36px;
+  grid-template-columns: max-content 1fr 44px;
   row-gap: 12px;
   column-gap: 12px;
   align-items: center;
 }
 /* Wide variant for longer parameter names (visual section) */
 .dial-set--wide {
-  grid-template-columns: minmax(110px, max-content) 1fr 36px;
+  grid-template-columns: minmax(140px, max-content) 1fr 44px;
 }
 
 .dial-name {
   font-family: 'Courier New', monospace;
-  font-size: 0.67rem;
-  color: var(--text-muted);
+  font-size: 0.8rem;
+  color: var(--text-primary);
   letter-spacing: 0.02em;
   white-space: nowrap;
 }
@@ -747,7 +746,7 @@ section { padding: 100px 0; position: relative; z-index: 1; }
 }
 .dial-value {
   font-family: 'Courier New', monospace;
-  font-size: 0.67rem;
+  font-size: 0.8rem;
   color: var(--accent);
   letter-spacing: 0.04em;
   text-align: right;
@@ -1158,7 +1157,7 @@ footer .container {
 .footer-brand-line {
   font-size: 0.72rem;
   font-weight: 300;
-  color: var(--text-muted);
+  color: var(--text-secondary);
   letter-spacing: 0.06em;
   margin-top: 4px;
 }
@@ -1181,16 +1180,16 @@ footer .container {
 .footer-legal {
   font-size: 0.7rem;
   font-weight: 300;
-  color: var(--text-muted);
+  color: var(--text-secondary);
   line-height: 1.7;
 }
 .footer-legal a {
-  color: var(--text-muted);
+  color: var(--text-secondary);
   text-decoration: underline;
   text-underline-offset: 2px;
   transition: color 0.2s;
 }
-.footer-legal a:hover { color: var(--text-secondary); }
+.footer-legal a:hover { color: var(--accent); }
 
 /* ─── FOOTER SOCIAL LINKS ─── */
 .footer-social {
@@ -1240,13 +1239,13 @@ footer .container {
   font-weight: 500;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: var(--text-muted);
+  color: var(--text-secondary);
   margin-bottom: 10px;
 }
 .footer-dev-enquiry p {
   font-size: 0.75rem;
   font-weight: 300;
-  color: var(--text-muted);
+  color: var(--text-secondary);
   line-height: 1.75;
 }
 .footer-dev-enquiry a {
@@ -1304,13 +1303,13 @@ footer .container {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background: var(--accent);
+  background: var(--cta);
   border: none;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #0c0c0e;
+  color: #ffffff;
   animation: indicator-pulse 2.6s ease-in-out infinite;
   z-index: 10;
   transition: opacity 0.2s, transform 0.2s;
