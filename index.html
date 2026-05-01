@@ -65,7 +65,7 @@
 </script>
 <!-- End MailerLite Universal -->
 
-  <!-- ─── STRUCTURED DATA — SoftwareSourceCode + Organisation + WebSite ─── -->
+  <!-- ─── STRUCTURED DATA: SoftwareSourceCode + Organisation + WebSite ─── -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -649,7 +649,7 @@
       <div class="how-grid">
         <div class="how-intro fade-up fade-up-delay-1">
           <h2 class="how-heading">
-            Three steps to<br /><em>portable brand logic.</em>
+            Four steps to<br /><em>portable brand logic.</em>
           </h2>
         </div>
         <div class="how-steps fade-up fade-up-delay-2">
@@ -668,7 +668,13 @@
             <h4>Plug into compliant systems</h4>
             <p>AI tools, vendor platforms, and creative workflows built to read BRND-standard pull your brand logic from the governed source. Every output traces back to a file you wrote and a version you approved.</p>
           </div>
+          <div class="how-step">
+            <div class="how-step-num">04</div>
+            <h4>Use it with AI today</h4>
+            <p>Right now, putting BRND-standard to use means giving an AI tool the relevant files as context. Attach them as project files in Claude or ChatGPT, paste them into a system prompt, point an agent at the GitHub repo, or feed them into a RAG pipeline. As more tools adopt the standard natively, that handover gets simpler. Your folder is the constant.</p>
+          </div>
         </div>
+        <p class="fade-up fade-up-delay-3" style="grid-column:2;margin-top:32px;font-size:0.9rem;font-weight:300;line-height:1.8;color:var(--accent-soft);font-style:italic;max-width:720px;">Your image binaries (JPGs, PSDs, raw assets) stay in your DAM. The folder does not duplicate them. It describes your imagery in plain language and can reference files by path when a workflow needs them. Existing reference imagery can also sit alongside the BRND files as a visual guide while the image side of the standard continues to be defined.</p>
       </div>
       <div class="how-cta fade-up fade-up-delay-3">
         <a href="https://github.com/brand-provenance/BRND-standard" target="_blank" rel="noopener noreferrer" class="btn-secondary">Read the standard on GitHub &rarr;</a>
@@ -706,6 +712,47 @@
           <div class="who-icon">&#9672;</div>
           <h4>Developers &amp; Workflow Builders</h4>
           <p>You are building agentic workflows. You want brand context that is structured, portable, and ready to plug into your tools from day one.</p>
+        </div>
+      </div>
+    </div>
+    <button class="scroll-indicator" data-target="section-doubts" aria-label="Scroll to next section">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 5v14M5 12l7 7 7-7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- COMMON DOUBTS -->
+  <section id="section-doubts">
+    <div class="container">
+      <div class="section-label fade-up">In Case You Are Wondering</div>
+      <div class="problem-grid">
+        <div class="fade-up">
+          <h2 class="problem-heading">
+            Will this work<br /><em>for someone like me?</em>
+          </h2>
+        </div>
+        <div class="problem-body fade-up fade-up-delay-1">
+          <p>Three doubts come up before everything else when people meet <strong>BRND-standard</strong> for the first time. Each one tends to dissolve once the standard is in front of you. Here is how we would put it.</p>
+        </div>
+      </div>
+      <div class="problem-points fade-up" style="margin-top:64px;">
+        <div class="problem-point">
+          <div class="problem-point-num">Doubt 01</div>
+          <p style="font-family:var(--font-display); font-size:1.15rem; font-style:italic; color:var(--text-primary); margin-bottom:14px; line-height:1.4;">&ldquo;My brand is small.&rdquo;</p>
+          <p>Start with voice alone. The standard scales down as easily as it scales up. A single founder with a clear voice has as much to gain as an enterprise with sub-brands.</p>
+        </div>
+        <div class="problem-point">
+          <div class="problem-point-num">Doubt 02</div>
+          <p style="font-family:var(--font-display); font-size:1.15rem; font-style:italic; color:var(--text-primary); margin-bottom:14px; line-height:1.4;">&ldquo;I do not have a developer team.&rdquo;</p>
+          <p>You do not need one. Author in plain language. Brand Provenance can handle the conversion into structured form, and the forthcoming UI will make in-house authoring approachable for non-technical teams.</p>
+        </div>
+        <div class="problem-point">
+          <div class="problem-point-num">Doubt 03</div>
+          <p style="font-family:var(--font-display); font-size:1.15rem; font-style:italic; color:var(--text-primary); margin-bottom:14px; line-height:1.4;">&ldquo;I already have extensive brand guidelines.&rdquo;</p>
+          <p>Keep them. The standard is the shape your existing content travels in. Your guidelines stay yours. The structure makes them portable into AI workflows that cannot read PDFs.</p>
         </div>
       </div>
     </div>
@@ -850,7 +897,7 @@
       nav.classList.toggle('scrolled', window.scrollY > 40);
     }, { passive: true });
 
-    // Intersection observer — fade-up on scroll
+    // Intersection observer: fade-up on scroll
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) entry.target.classList.add('visible');
@@ -864,7 +911,7 @@
       document.querySelectorAll('.hero .fade-up').forEach(el => el.classList.add('visible'));
     }, 100);
 
-    // Scroll indicators — smooth scroll to target section
+    // Scroll indicators: smooth scroll to target section
     document.querySelectorAll('.scroll-indicator').forEach(btn => {
       btn.addEventListener('click', () => {
         const target = document.getElementById(btn.dataset.target);
